@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
+  theme_day: custom
+  theme_night: custom
   font: minimal
   font_size: L
 
@@ -18,8 +18,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: ''
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -45,7 +45,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Eleonora Alei. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -73,9 +73,10 @@ features:
     url: 'https://github.com/<username>/<repository>'
     content_dir: content
     branch: main
-  avatar:
+  avatar: 
     gravatar: false
     shape: circle
+
   comment:
     provider: ''
     disqus:
