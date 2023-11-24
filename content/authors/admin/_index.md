@@ -3,7 +3,7 @@
 title: Eleonora Alei
 
 # Name pronunciation (optional)
-name_pronunciation: 
+name_pronunciation: (she/her/hers)
 
 # Full name (for SEO)
 first_name: Eleonora
@@ -25,7 +25,7 @@ organizations:
     url: 
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include exoplanet atmospheres, habitability and biosignatures and next-generation telescopes.
 
 # Interests to show in About widget
 interests:
@@ -51,39 +51,39 @@ education:
 skills:
   - name: Technical
     items:
-      - name: Python
+      - name: Programming (Python, FORTRAN, C)
         description: ''
-        percent: 80
+        percent: 90
         icon: python
         icon_pack: fab
       - name: Data Science
         description: ''
-        percent: 100
+        percent: 80
         icon: chart-line
         icon_pack: fas
-      - name: SQL
+      - name: Project Management
         description: ''
-        percent: 40
-        icon: database
+        percent: 70
+        icon: fa-solid fa-bars-progress
         icon_pack: fas
   - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
+#    color: '#eeac02'
+#    color_border: '#f0bf23'
     items:
-      - name: Singing
+      - name: Performing
         description: ''
-        percent: 60
-        icon: person-hiking
+        percent: 70
+        icon: fa-solid fa-masks-theater
         icon_pack: fas
-      - name: Cats
+      - name: Tea
         description: ''
         percent: 100
-        icon: cat
+        icon: fa-solid fa-mug-hot
         icon_pack: fas
-      - name: Photography
+      - name: Puzzling
         description: ''
-        percent: 80
-        icon: camera-retro
+        percent: 60
+        icon: fa-solid fa-puzzle-piece
         icon_pack: fas
 
 # Social/Academic Networking
@@ -96,29 +96,29 @@ social:
     link: '/#contact'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: https://twitter.com/EleonoraAlei
     label: Follow me on Twitter
     display:
       header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
+    icon_pack: ai
+    link: https://scholar.google.com/citations?hl=en&user=QalqKJ4AAAAJ
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/eleonoraalei
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/eleonora-alei/
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf
+    link: uploads/CV.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-I am currently a NASA Postdoctoral Fellow at the NASA Goddard Space Flight Center in Greenbelt, MD. My most recent position was as a postdoctoral researcher in the Exoplanet & Habitability Group at ETH Zurich. <br>I study the atmospheric structure and the detectability of habitable terrestrial planets with next-generation space telescopes. I use Bayesian retrieval frameworks to define the science requirements of the LIFE (Large Interferometer For Exoplanet) and the HWO (Habitable Worlds Observatory) concepts. I am the main developer of Exo-MerCat, a catalog of exoplanet data with the most precise and accurate measurements taken from the main exoplanet catalogs. I also co-developed the open-source code petitRADTRANS for the calculation of exoplanetary spectra.
+I study the atmospheric structure and the detectability of habitable terrestrial planets with next-generation space telescopes. I use Bayesian retrieval frameworks to define the science requirements of the LIFE (Large Interferometer For Exoplanet) and the HWO (Habitable Worlds Observatory) concepts. I am the main developer of Exo-MerCat, a catalog of exoplanet data with the most precise and accurate measurements taken from the main exoplanet catalogs. I also co-developed the open-source code petitRADTRANS for the calculation of exoplanetary spectra.
 {style="text-align: justify;"}
