@@ -141,10 +141,10 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+        - name: Software
+          tag: software
+        - name: Science
+          tag: science
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
@@ -194,11 +194,11 @@ sections:
     design:
       columns: '2'
       view: compact
-  - block: tag_cloud
-    content:
-      title: Popular Topics
-    design:
-      columns: '2'
+#  - block: tag_cloud
+#    content:
+#      title: Popular Topics
+#    design:
+#      columns: '2'
   - block: contact
     id: contact
     content:
