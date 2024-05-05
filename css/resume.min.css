@@ -109,12 +109,12 @@ p.lead{
     #sideNav .navbar-brand{
         display:flex;
         margin:auto auto 0;
-        padding:.5rem
+/*        padding:.5rem*/
     }
 
     #sideNav .navbar-brand .img-profile{
-        max-width:10rem;
-        max-height:10rem;
+        max-width:17rem;
+        max-height:17rem;
         border:.5rem solid rgba(6, 199, 123,.2)
     }
 
@@ -171,15 +171,15 @@ section.resume-section .resume-item .resume-date{
 }
 
 .bg-primary{
-    background-color:#0ea682!important
+    background-color:#4C9F8F!important
 }
 
 .text-primary{
-    color:#0ea682!important
+    color:#4C9F8F!important
 }
 
 a{
-    color:#0ea682
+    color:#4C9F8F
 }
 
 a:active,a:focus,a:hover{
