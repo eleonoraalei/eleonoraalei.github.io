@@ -30,6 +30,7 @@ body {
   max-width: 420px;
   padding: 15px;
   margin: 0 auto;
+ margin-top: 8rem!important;
   background-color:#FFF;
       border:.5rem solid rgba(6, 199, 123,.2)
 }
