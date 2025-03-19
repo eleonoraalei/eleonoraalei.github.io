@@ -1,437 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Eleonora Alei</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleonora Alei - Astrophysicist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
+<body>
+    <header class="fixed-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
+            <div class="container">
+                <a class="navbar-brand main-navbar-brand" href="index.html">Eleonora Alei</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
 
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Eleonora Alei</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/avatar.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#grants">Grants</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#dev">Coding</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li> -->
-      </ul>
-    </div>
-      <div align='bottom' style='color:ghostwhite; font-size:9px'>© Eleonora Alei 2024 | Design: <a href='https://startbootstrap.com/themes/' style='color:aquamarine'>Start Bootstrap</a></div>
-  </nav>
-
-
-
-<!-- *********************** ABOUT *********************** -->
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" style='min-height:100vh!important' id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Eleonora
-          <span class="text-primary">Alei</span><p style="font-size:3rem; display:inline">, Ph.D.</p></h1><h3>Currently: NASA Postdoctoral Fellow @ NASA Goddard Space Flight Center</h3>
-
-        <div class="subheadingindex mb-5">NASA Goddard Space Flight Center <br>8800 Goddard Rd, 20771 Greenbelt (MD)<br>
-          <a href="mailto:eleonora.alei.phd@gmail.com">eleonora.alei.phd@gmail.com</a>,           <a href="mailto:eleonora.alei@nasa.gov">eleonora.alei@nasa.gov</a>
-        </div>
-        <p class="lead mb-5">I study the atmospheric structure and the detectability of habitable terrestrial planets with the next-​generation facilities. I use Bayesian retrieval frameworks to define the science requirements of the LIFE (Large Interferometer For Exoplanets) and HWO (Habitable Worlds Observatory), two space missions that will help finding life in the universe.
-        I am co-developer of the open-source code petitRADTRANS, which can reproduce exoplanetary spectra.
-<!--          <div class="subheading mb-3">Research interests</div> exoplanets (terrestrial), exoplanet atmospheres, Bayesian retrievals, radiative transfer codes, astrobiology, habitability, transmission & emission spectroscopy, exoplanets detection, observation and theory, Virtual Observatory.-->
-</p><br><br>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/eleonora-alei">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/eleonoraalei">
-            <i class="fab fa-github"></i>
-          </a>
-            <a href="https://gitlab.com/eleonoraalei">
-                <i class="fab fa-gitlab"></i>
-            </a>
-          <a href="https://twitter.com/EleonoraAlei">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!--<a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>-->
-        </div>
-      </div>
-    </section>
-
-
-
-
-<!-- *********************** EXPERIENCE *********************** -->
-
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5"><span class="text-primary">Exp</span>erience</h2>
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">NASA Postdoctoral Fellow</h3>
-            <div class="subheading mb-3">NASA Goddard Space Flight Center</div>
-            <p>Topic: "Exoplanet characterization with the Habitable Worlds Observatory"</p>
-          </div>
-              
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2023 - Present</span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav main-navbar-nav">
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#research-highlights">Research</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#skills-interests">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="publications.html">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link active" href="cv.html">CV</a></li>
+                    </ul>
+                    <button id="dark-mode-toggle" class="btn btn-secondary ms-3">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                </div>
             </div>
-         </div>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Postdoctoral Researcher</h3>
-            <div class="subheading mb-3">ETH Zurich</div>
-            <p>Topic: "Exoplanet characterization with the Large Interferometer for Exoplanets"</p>
-          </div>
+        </nav>
+    </header>    
 
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2020 - September 2023</span>
+    <main class="container mt-5">
+        <section id="about" class="about-section">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="profile-image-container">
+                        <img src="img/avatar.jpg" alt="Eleonora Alei" class="img-fluid rounded-circle profile-image">
+                    </div>
+                    <div class="research-profiles">
+                        <div class="row row-cols-3 g-2">
+                            <div class="col">
+                                <a href="https://orcid.org/0000-0002-0006-1175" target="_blank" class="btn btn-outline-primary w-100 btn-orcid">
+                                    <i class="fab fa-orcid"></i> 
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://scholar.google.com/citations?user=QalqKJ4AAAAJ&hl=en&oi=ao" target="_blank" class="btn btn-outline-primary w-100 btn-scholar">
+                                    <i class="fas fa-graduation-cap"></i> 
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.researchgate.net/profile/Eleonora-Alei" target="_blank" class="btn btn-outline-primary w-100 btn-researchgate">
+                                    <i class="fab fa-researchgate"></i> 
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Alei%2C%20E%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" class="btn btn-outline-primary w-100 btn-ads">
+                                    <i class="fas fa-star"></i> 
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://github.com/eleonoraalei" target="_blank" class="btn btn-outline-primary w-100 btn-github">
+                                    <i class="fab fa-github"></i> 
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://gitlab.com/eleonoraalei" target="_blank" class="btn btn-outline-primary w-100 btn-gitlab">
+                                    <i class="fab fa-gitlab"></i> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h1 class="mb-0">Eleonora <span class="text-primary">Alei</span>, Ph.D.</h1>
+                    <h5 class="mb-3">NASA Postdoctoral Fellow @ NASA Goddard Space Flight Center</h5>
+                    <br><br>
+                    <p class="lead mb-4">
+                        I specialize in the characterization of terrestrial, habitable exoplanets and their atmospheric modeling. My research focuses on defining science requirements for future space missions aimed at detecting habitable worlds and potential biosignatures. I model both atmospheres and expected noise to help scientists and technologies make reasonable architecture trades.
+                    </p>
+                    <div class="key-roles mb-4">
+                        <h6 class="text-primary">Key Roles and Affiliations:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i><strong>LIFE (Large Interferometer For Exoplanets) Mission</strong>: Science Team Lead</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i><strong>Habitable Worlds Observatory (HWO)</strong>: Coronagraph Exposure Time Calculator Lead Developer</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i><strong>NASA Postdoctoral Program (NPP)</strong>: Current Fellow</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i><strong>Astronomy & Computing</strong>: Member of the Early Career Board of Editors</li>
+                        </ul>
+                    </div>
+                    
+                </div>
             </div>
-         </div>
-         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Doctoral Student</h3>
-            <div class="subheading mb-3">Università degli Studi di Padova - INAF Osservatorio di Padova</div>
-            <p>Topic: "Habitability studies of Super Earths Atmospheres"</p>
-          </div>
-
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2016 - December 2019</span>
-            </div>
-         </div>
-                   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <!-- <a href="CV.pdf" class="w3-button w3-black">Link Button</a> -->
-               <button><a href="material/CV.pdf">Full CV</a></button>
-              </div></div>
-
-        </div>
-
-          </section>
-
-<!-- *********************** EDUCATION *********************** -->
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="education">
-      <div class="w-100">
-        <h2 class="mb-5"><span class="text-primary">Edu</span>cation</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Ph.D. Degree</h3>
-            <div class="subheading mb-3">Università degli Studi di Padova - INAF Osservatorio di Padova</div>
-            <p>Topic: "Habitability studies of Super Earths Atmospheres"</p>
-
-          </div>
-
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2016 - December 2019</span>
-            </div>
-         </div>
-
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Master's Degree in Astronomy and Astrophysics</h3>
-            <div class="subheading mb-3">“La Sapienza” University of Rome</div>
-            <p>Topic: "Stability studies of Super Earths Atmospheres"</p>
-
-          </div>
-
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2014 - September 2016</span>
-            </div>
-         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Bachelor’s Degree in Physics and Astrophysics</h3>
-            <div class="subheading mb-3">“La Sapienza” University of Rome</div>
-            <p>Topic: "Chemical and dynamical processes in Hot Jupiters atmospheres"</p>
-
-          </div>
-
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2011 - December 2014</span>
-            </div>
-
-         </div>
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <button><a href="material/CV.pdf">Full CV</a></button>
-              </div></div>
-
-      </div>
-    </section>
-
-
-   <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
-      <div class="w-100">
-        <h2 class="mb-5">Research</h2>
-          <p><a href='research.html'>Data Archives</a>
-          Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-      </div>
-    </section> -->
-
-
-<!-- *********************** GRANTS AND AWARDS *********************** -->
-
-<hr class="m-0">
-<section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="grants">
-  <div class="w-100">
-    <h2 class="mb-5"><span class="text-primary">Gra</span>nts</h2>
-    <!-- <h3>Peer-Reviewed</h3> -->
-    <ul style='text-align:justify;'>
-        <li><b>NASA Postdoctoral Fellowship</b> (October 2023). Funding provided by NASA HQ. Amount: 90k yearly (for 2 years)}</li>       
-      <li><b>European Space Agency (ESA) Open Space Innovation Platform (OSIP)</b> (March 2021). Role: Co-PI. Amount: EUR 90k</li>
-</ul>
-
-
-  </div>
-</section>
-
-<!-- *********************** DEVELOPER EXPERIENCE *********************** -->
-
-<hr class="m-0">
-<section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="dev">
-  <div class="w-100">
-    <h2 class="mb-5"><span class="text-primary">Dev</span>eloper Experience</h2>
-    <!-- <h3>Peer-Reviewed</h3> -->
-    <ul style='text-align:justify;'>
-
-      <li><b>LIFE Atmospheric Retrieval Framework - Developer</b> (Jan 2020 - present). </li>
-      <li><b> petitRADTRANS - Co-Developer</b> (Jan 2020 - present).</li>
-      <li><b>Exo-MerCat - Developer</b> (Jan 2019 - present).</li>
-      <li><b> Radiative-Convective transfer code for terrestrial atmospheres - Developer</b> (Jan 2016 - Sep 2019)</li>
-      </ul></div>
-</section>
-<!-- *********************** TEACHING EXPERIENCE *********************** -->
-
-<hr class="m-0">
-<section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="teaching">
-  <div class="w-100">
-    <h2 class="mb-5"><span class="text-primary">Tea</span>ching Experience</h2>
-     <h3>Student Supervision</h3>
-    <ul style='text-align:justify;'>
-
-      <li><b>Björn Konrad, Ph.D. Thesis</b>, ETH Zurich, Switzerland. Role: Co-Supervisor (Dec 2020 - present).</li>
-      <li><b>Nick Burri, Semester Project</b>, ETH Zurich, Switzerland. Role: Co-Supervisor (Jan 2023 - present).</li>
-      <li><b>Xiaoyu Sun, Master’s Thesis</b>, ETH Zurich, Switzerland. Role: Co-Supervisor (Jan 2023 - present).</li>
-      <li><b>Jingyu Wang, Semester Project</b>, ETH Zurich, Switzerland. Role: Co-Supervisor (Oct 2022 - Feb 2023).</li>
-      <li><b>Fabian Seidler, Master’s Thesis</b>, ETH Zurich, Switzerland. Role: Co-Supervisor (Feb 2021 - Aug 2021).</li>
-      <li><b>Caroline Hasler, Semester Project</b>, ETH Zurich, Switzerland. Role: Co-Supervisor (Sep 2020 - Feb 2021).</li>
-      <li><b>Björn Konrad, Master’s Thesis</b>, ETH Zurich, Switzerland. Role: Co-Supervisor (Apr 2020 - Oct 2020).</li>
-      <li><b>Massimiliano Monetti, Master’s Thesis</b>, Università degli Studi Roma Tre, Rome, Italy. Role: Co-Supervisor (Feb 2020 - Aug 2020)</li>
-    </ul>
-
- <h3>Teaching Assistant</h3>
- <ul>
-   <li><b>Teaching Assistant Coordinator Physics I & II</b>, ETH Zurich, Switzerland. (Academic Year 22/23)</li>
-<li> <b>Teaching Assistant Exoplanets Course</b>, ETH Zurich, Switzerland. (Spring 21/22)</li>
-<li> <b>Teaching Assistant ”Earth - A Unique (?) Habitable Planet” Course</b>, ETH Zurich, Switzerland. (Fall 21/22)</li>
-<li> <b>Teaching Assistant Physics II</b>, ETH Zurich, Switzerland. (Spring 20/21; Spring 21/22)</li>
-
-
-</ul><br><br>
-
-  </div>
-</section>
-<!-- *********************** PUBLICATIONS *********************** -->
-
-    <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="publications">
-      <div class="w-100">
-        <h2 class="mb-5"><span class="text-primary">Pub</span>lications (Highlights)</h2>
-        <!-- <h3>Peer-Reviewed</h3> -->
-        <ul style='text-align:justify;'>
+        </section>
         
-          <li>Angerhausen, D.; et al. (incl. <b>Alei, E.</b>) + the LIFE Collaboration (2023); Astrobiology, 23, 2, pp. 183–194; <a href="https://doi.org/10.1089/ast.2022.0010">doi.org/10.1089/ast.2022.0010</a>.</li>
-            
-          <li><b>Alei, E.</b>; et al. + the LIFE Collaboration (2022); A&A, 665, A106; <a href='https://doi.org/10.1051/0004-6361/202243760'>doi.org/10.1051/0004-6361/202243760</a>.</li>
+        <section id="experience" class="mt-5">
+            <div class="section-header">
+                <h2><i class="fas fa-briefcase"></i>Experience</h2>
+            </div>
+            <br>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-logo">
+                                <img src="img/nasa-logo.png" alt="NASA Logo">
+                            </div>
+                            <div class="timeline-text">
+                                <div class="timeline-date">2023 - Present</div>
+                                <div class="timeline-title">NASA Postdoctoral Fellow</div>
+                                <div class="timeline-subtitle">NASA Goddard Space Flight Center</div>
+                                <div class="timeline-body">
+                                    Leading the development of the coronagraph exposure time calculator (ETC) with 2 publications in preparation. Leading the LIFE Science Team with monthly meetings and community papers. Collaborating with international scientists on atmospheric retrievals and radiative transfer intermodel comparisons. Maintaining exoplanet catalog used as source by the PLATO and LIFE teams for their input catalogs.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-logo">
+                                <img src="img/eth-logo.png" alt="ETH Zurich Logo">
+                            </div>
+                            <div class="timeline-text">
+                                <div class="timeline-date">2020 - 2023</div>
+                                <div class="timeline-title">Postdoctoral Researcher</div>
+                                <div class="timeline-subtitle">ETH Zurich</div>
+                                <div class="timeline-body">
+                                    Led the atmospheric modeling team for the LIFE mission concept, resulting in 5 high-impact publications by the core team. Developed the official LIFE atmospheric retrieval routine. Supervised 8 students and performed teaching duties for 6 semesters.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-logo">
+                                <img src="img/padova-logo.png" alt="Università degli Studi di Padova Logo">
+                            </div>
+                            <div class="timeline-text">
+                                <div class="timeline-date">2016 - 2019</div>
+                                <div class="timeline-title">Doctoral Researcher</div>
+                                <div class="timeline-subtitle">Università degli Studi di Padova - INAF Osservatorio di Padova</div>
+                                <div class="timeline-body">
+                                    Developed software for: handling exoplanet catalog data; modeling radiative-convective transfer and ozone photochemistry for terrestrial planets. The results of the models then recreated by biologists in the laboratory, to study the behavior of photosynthetic bacteria under exotic conditions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="cv.html" class="btn btn-primary mt-3">View Full CV</a>
 
-          <li><b>Alei, E.</b>; et al. (2022) SPIE Proceedings Volume 12180, Space Telescopes and Instrumentation 2022: Optical,
-          Infrared, and Millimeter Wave; 121803L; <a href='https://doi.org/10.1117/12.2631692'>doi.org/10.1117/12.2631692</a>.</li>
-
-          <li>Konrad, B. S.; <b>Alei, E.</b>; et al. + the LIFE Collaboration (2022) A&A 664, A23; <a href="https://doi.org/10.1051/0004-6361/202141964">doi.org/10.1051/0004-6361/202141964</a>.</li>
-
-          <li>Quanz, S. P.; et al. (incl. <b>Alei, E.</b>) + the LIFE Collaboration (2022); A&A 664, A21; <a href="https://doi.org/10.1051/0004-6361/202140366">doi.org/10.1051/0004-6361/202140366</a>.</li>
-
-          <li>Montalto, M.; et al. (incl. <b>Alei, E.</b>) (2021) A&A, 653, A98; <a href='https://doi.org/10.1051/0004-6361/202140717'>doi.org/10.1051/0004-6361/202140717</a>.</li>
-
-          <li><b>Alei, E.</b> (2020) Mem. S.A.It. Vol. 91, 267; <a href='http://sait.oat.ts.astro.it/MSAIt9103-0420/PDF/2020MmSAI..91..267A.pdf'>MSAIt9103-0420</a>.</li>
-
-          <li>Claudi, R.; <b>Alei, E.</b>; et al. (2020), 11(1), 10;  <a href="https://doi.org/10.3390/life11010010">doi:10.3390/life11010010</a>.</li>
-
-        <li>Carleo, I.;  et al. (incl. <b>Alei, E.</b>) + GAPS Team. (2020) A&A 645, A71 (2021); <a href="https://doi.org/10.1051/0004-6361/202039042">doi:10.1051/0004-6361/202039042</a>.</li>
-
-        <li>Petralia, A.; <b>Alei, E.</b>; et al. (2020), Monthly Notices of the Astronomical Society, 496, 5350,<a href="https://doi.org/10.1093/mnras/staa1929">doi:10.1093/mnras/staa1929</a>.</li>
-
-        <li>Carleo, I.; et al. (incl. <b>Alei, E.</b>) + GAPS Team. (2020),  A&A, 638, A5, <a href="https://doi.org/10.1051/0004-6361/201937369">doi:10.1051/0004-6361/201937369</a>.</li>
-
-        <li>Battistuzzi, M.; et al. (incl. <b>Alei, E.</b>) (2020), Front. Plant Sci. 11:182, <a href="https://doi.org/10.3389/fpls.2020.00182">doi:10.3389/fpls.2020.00182</a>.</li>
-
-        <li><b>Alei, E.</b>;  et al. (2020), Astronomy and Computing, Volume 31, 100370, ISSN 2213-1337, <a href="https://doi.org/10.1016/j.ascom.2020.100370">doi:10.1016/j.ascom.2020.100370</a>.</li>
-
-        <li>Claudi, R.; <b>Alei, E.</b> (2019), Galaxies, 7(4), 82; <a href="https://doi.org/10.3390/galaxies7040082">doi:10.3390/galaxies7040082</a>.</li>
-
-
-</ul><br><br>
-  <div class="resume-content">
-		  	<button><a href="material/Publication_List.pdf" class='button'>All Publications</a></button>
-        	<button><a href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=OR&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FAlei%2C%20E%2FAlei%2C%20E%22&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FAlei%2C%20E%2FAlei%2C%20Eleonora%22&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(author_facet_hier%3A%221%2FAlei%2C%20E%2FAlei%2C%20E%22%20OR%20author_facet_hier%3A%221%2FAlei%2C%20E%2FAlei%2C%20Eleonora%22)&p_=0&q=%20author%3A%22Alei%2C%20E%22&sort=date%20desc%2C%20bibcode%20desc" class='button'>NASA ADS</a></button>
+        </section>
+<section id="research-highlights" class="mt-5">
+    <div class="section-header">
+        <h2><i class="fas fa-star"></i> Research Highlights</h2></div>
+    <br>
+    <ul class="nav nav-tabs research-tabs" id="researchTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link research-nav-link active" id="papers-tab" data-bs-toggle="tab" data-bs-target="#papers" type="button" role="tab" aria-controls="papers" aria-selected="true">Recent Papers</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link research-nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">Research Activity</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link research-nav-link" id="dev-exp-tab" data-bs-toggle="tab" data-bs-target="#dev-exp" type="button" role="tab" aria-controls="dev-exp" aria-selected="false">Developer Experience</button>
+        </li>
+    </ul>
+    <div class="tab-content mt-3" id="researchTabsContent">
+        <div class="tab-pane fade show active" id="papers" role="tabpanel" aria-labelledby="papers-tab">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Exo-MerCat: Advancing Exoplanet Data Management</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Alei et al. (2025)</h6>
+                            <p class="card-text">I have developed an enhanced, open-source tool that efficiently merges exoplanet data from
+                                 multiple catalogs, including newly added sources like TESS and K2. This offers researchers a more comprehensive, accurate, and user-friendly 
+                                 resource for exoplanet studies, thus advancing our ability to analyze and understand the diverse population of known exoplanets.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250208473A/abstract" class="btn btn-primary" target="_blank">Read Paper</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Finding Earth with LIFE and HWO</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Alei et al. (2024)</h6>
+                            <p class="card-text">Combining observations from future space missions like HWO and LIFE, 
+                                operating in complementary spectral ranges (UV/VIS/NIR and MIR) significantly enhances our ability to characterize 
+                                Earth-like exoplanets and detect potential biosignatures, paving the way for groundbreaking discoveries in the search 
+                                for extraterrestrial life.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...689A.245A/abstract" class="btn btn-primary" target="_blank">Read Paper</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Refining Atmospheric Retrieval for LIFE Mission</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Alei et al. (2022)</h6>
+                            <p class="card-text">Variations in opacity data and modeling choices can impact atmospheric retrievals 
+                                for Earth-like exoplanets as observed by the LIFE mission, emphasizing the crucial need for standardized modeling approaches and 
+                                improved laboratory data to ensure accurate characterization of exoplanet atmospheres in future space missions.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2022SPIE12180E..3LA/abstract" class="btn btn-primary" target="_blank">Read Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Exoplanet Atmospheric Characterization with Future Space Missions</h5>
+                            <p class="card-text">
+                                I focus on exploring the potential of future space missions, such as LIFE (Large Interferometer For Exoplanets) and HWO (Habitable Worlds Observatory), 
+                                for characterizing terrestrial exoplanets. This work involves developing atmospheric retrieval techniques, assessing the detectability of biosignatures, 
+                                and defining science requirements for next-generation observatories aimed at finding life in the universe.
+                            </p>
+                            <a href="https://ui.adsabs.harvard.edu/user/libraries/0E2KM9NiTeavEhjZtfdl6g" class="btn btn-primary" target="_blank">View Related Papers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Atmospheric Modeling and Retrieval Techniques</h5>
+                            <p class="card-text">
+                                I develop and apply advanced models for studying exoplanet atmospheres, with a focus on terrestrial planets. This includes work on radiative transfer models, 
+                                atmospheric retrieval frameworks, and the study of atmospheric stability in terrestrial planets. I'm also involved in the development and enhancement of 
+                                open-source tools like petitRADTRANS, which are crucial for the exoplanet research community.
+                            </p>
+                            <a href="https://ui.adsabs.harvard.edu/user/libraries/pnNZz4zqTZWLzmY5DoOS_A" class="btn btn-primary" target="_blank">View Related Papers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Exoplanet Data Management and Catalog Development</h5>
+                            <p class="card-text">
+                                I create tools and methodologies for managing and analyzing exoplanet data. This includes the development of Exo-MerCat, a merged exoplanet catalog with Virtual Observatory connections. My work in this area aims to improve the accessibility and interoperability of exoplanet data, facilitating more efficient research and collaboration within the exoplanet science community.
+                            </p>
+                            <a href="https://ui.adsabs.harvard.edu/user/libraries/X5eHHUiXSgm2DJkAzMU2JA" class="btn btn-primary" target="_blank">View Related Papers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="dev-exp" role="tabpanel" aria-labelledby="dev-exp-tab">
+            <div class="cv-section dev-experience">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">HWO Coronagraph ETC</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Lead Developer | 2023 - Present</h6>
+                                <p class="card-text">Developing Exposure Time Calculator for HWO coronagraph. Coordinating existing software and standards into a new user-friendly and flexible code.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">LIFE Atmospheric Retrieval Framework</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Lead Developer | 2020 - Present</h6>
+                                <p class="card-text">Coordinated developer team and oversaw development of official LIFE atmospheric retrieval routine, resulting in 5 high-impact publications.</p>
+                                <a href="https://www.aanda.org/articles/aa/abs/2022/08/aa41964-21/aa41964-21.html" class="btn btn-sm btn-reference">
+                                    <i class="fas fa-book"></i> Reference
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Exo-MerCat</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Lead Developer | 2019 - Present</h6>
+                                <p class="card-text">Developed and maintained VO-aware Python code for collecting and selecting exoplanet data. Released open-source code and published 2 refereed papers.</p>
+                                <a href="https://github.com/Exo-MerCat/Exo-MerCat" class="btn btn-sm btn-github">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://www.sciencedirect.com/science/article/abs/pii/S2213133725000095" class="btn btn-sm btn-reference">
+                                    <i class="fas fa-book"></i> Reference
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">petitRADTRANS</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Contributing Developer | 2020 - 2023</h6>
+                                <p class="card-text">Implemented surface scattering feature and enhanced Collision-Induced Absorption treatment. Refactored writing of absorption correlated-k calculation from FORTRAN to Python.</p>
+                                <a href="https://gitlab.com/mauricemolli/petitRADTRANS/-/tree/master?ref_type=heads" class="btn btn-sm btn-github">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...665A.106A/abstract" class="btn btn-sm btn-reference">
+                                    <i class="fas fa-book"></i> Reference
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section id="skills-interests" class="mt-5">
+    <div class="section-header">
+        <h2><i class="fas fa-cogs"></i>Skills & Interests</h2>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row skill-accordion">
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-category">
+                <button class="skill-toggle">
+                    <i class="fas fa-solid fa-globe mr-2"></i> Exoplanets
+                </button>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <p>Atmospheric Modeling of Terrestrial Planets</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Atmospheric Spectra Simulation </p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Atmospheric Retrievals</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-category">
+                <button class="skill-toggle">
+                    <i class="fas fa-solid fa-satellite mr-2"></i> Instrument Science
+                </button>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <p>Future Generation Telescopes</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Noise Modeling</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Architecture Trades</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-category">
+                <button class="skill-toggle">
+                    <i class="fas fa-database mr-2"></i> Data Management
+                </button>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <p>Catalogs</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Virtual Observatory Standards</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-category">
+                <button class="skill-toggle">
+                    <i class="fas fa-code mr-2"></i> Programming
+                </button>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <p>Python</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>FORTRAN</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>C</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>HTML/CSS</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-category">
+                <button class="skill-toggle">
+                    <i class="fas fa-brain mr-2"></i>Analytical & Soft Skills
+                </button>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <p>Problem Solving</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Scientific Writing</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Project Management</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skill-category">
+                <button class="skill-toggle">
+                    <i class="fas fa-users mr-2"></i> Education & Outreach
+                </button>
+                <div class="skill-content">
+                    <div class="skill-item">
+                        <p>Teaching</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Mentoring</p>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Public Outreach</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="science-communication" class="mt-5">
+    <div class="section-header">
+        <h2><i class="fas fa-bullhorn"></i> Science Communication</h2>
+    </div>
+
+    <div id="sciCommCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sciCommCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#sciCommCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#sciCommCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/outofthisworld.jpg" class="d-block w-100" alt="Out of this World - Girls In Space">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Out of this World - Girls In Space</h5>
+                    <p>Robinson Nature Center, MD, USA, 2024 & 2025</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/lincei.jpg" class="d-block w-100" alt="Exoplanets in Italy: status and perspectives">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Exoplanets in Italy: status and perspectives</h5>
+                    <p>Accademia dei Lincei, Rome, Italy, 2025</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/scuola.jpg" class="d-block w-100" alt="Lectures for 1st-5th Grade Students">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lectures for 1st-5th Grade Students</h5>
+                    <p>Scuola Amore Misericordioso, Rome, Italy, 2025</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sciCommCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sciCommCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
 
-      </div>
-    </section>
-    <hr class="m-0">
+<section id="contact" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h3>Get in Touch</h3>
+                <p>Feel free to reach out for collaborations, research inquiries, or any questions about my work.</p>
+                <ul class="list-unstyled contact-info">
+                    <li class="mb-3">
+                        <i class="fas fa-envelope text-primary mr-2"></i>
+                        <a href="mailto:eleonora.alei@nasa.gov">eleonora.alei@nasa.gov</a>
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-map-marker-alt text-primary mr-2"></i>
+                        NASA Goddard Space Flight Center, 8800 Greenbelt Rd, Greenbelt, MD 20771, USA
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-clock text-primary mr-2"></i>
+                        Office Hours: Monday to Friday, 9:00 AM - 5:00 PM (EST)
+                    </li>
+                </ul>
+                <div class="social-icons mt-4">
+                    <a href="https://www.linkedin.com/in/eleonora-alei" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/EleonoraAlei" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+               
+            </div>
+            <div class="col-md-6">
+                <h3>Location</h3>
+                <div id="map" style="height: 300px; width: 100%;"></div>
+                <p class="mt-3">I'm based at NASA Goddard Space Flight Center, where I conduct my research on exoplanet characterization and atmospheric modeling.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
+    </main>
 
-  <!-- *********************** SKILLS *********************** -->
+    <footer class=" text-center py-3 mt-5">
+        <p>&copy; 2025 Eleonora Alei. All rights reserved.</p>
+    </footer>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5"><span class="text-primary">Ski</span>lls</h2>
-
-        <div class="subheading mb-3">Hard Skills</div>
-        <ul class="fa-ul mb-0">
-          <li>
-              <i class="fa-li fa fa-check"></i><b>Programming Languages</b>: FORTRAN (Advanced), Python (Advanced), C/C++ (Basic), SQL (Basic), Java (Basic). </li>
-              <i class="fa-li fa fa-check"></i><b>Web Languages</b>: HTML (Advanced), CSS (Advanced). </li>
-              <li><i class="fa-li fa fa-check"></i><b>Industry Software Skills</b>: MS Office suite (Advanced); Photoshop CS6 (Medium);  LaTeX (Medium); IDL (Basic).</li>
-              <li><i class="fa-li fa fa-check"></i><b>Analytical Skills</b>: Research, Data presentation, Database management, Data and metrics interpreting, Reporting, Diagnostics. .</li>
-          </ul>
-          <br>
-
-
-        <div class="subheading mb-3">Soft Skills</div>
-            <ul class="fa-ul mb-0">
-                <li><i class="fa-li fa fa-check"></i><b>General Business Skills</b>: Project management, Teamwork, Problem-solving, Critical thinking, Organizational skills, Adaptability, Resourcefulness.</li>
-                <li><i class="fa-li fa fa-check"></i><b>Communication Skills</b>: Good scientific dissemination skills. Able to work with children and adults in teaching and disseminate scientific knowledge.</li>
-                <li><i class="fa-li fa fa-check"></i><b>Languages</b>: Italian (Mother-tongue), English (Level C2), French (Level B2) and German (Level B1)</li>
-          </ul>
-
-
-      </div>
-    </section>
-
-
-<!-- *********************** INTERESTS  *********************** -->
- <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5"><span class="text-primary">Int</span>erests</h2>
-  <div class="subheading mb-3">Outreach</div>
-        I regularly participate in <b>public outreach events</b>, including: Nacht der Physik (ETH, Zürich, Switzerland June 17, 2022), PlanetS @ Fantasy Basel (Basel, Switzerland, May 26, 2022 & Oct 9--10, 2021), Scientifica -- Zürich Science Days (ETH, Zürich, Switzerland, Sep 4 -- 5, 2021), European Night of Researchers 2017 & 2018 (Padua, Italy). <br><br>
-        I have spoken at <b>virtual seminars for middle school and college students</b> at Waggoner Road Middle School in Columbus (Ohio, USA) and Wheeling University (West Virginia, USA).<br><br>
-        I developed the "<b>Exoplanet Treasure Hunt</b>" in 2017, a laboratory game for 4/13-year-old kids. The game was a successful entertainment during outreach events in Padua, Italy. <br><br>
-        I am involved in the management of the science dissemination Facebook/Instagram Page “La Scienza Coatta” (~130K followers). We explain complex science topics and highlight relevant present and past scientists (including women and LGBTQIA+ members) using an Italian dialect to make it accessible to everyone regardless of their socioeconomic status.
-
-        <br>  <br><div class="subheading mb-3">Hobbies</div>
-          <p>Other than astronomy and programming, I am a music and theatre lover. I like to combine the two things in musical theatre performances to see or to play directly. <br>
-          I also play role-playing games both live and online.<br>
-          I like to travel around the world and to dive deep into the various cultures and traditions of the places I am visiting -- most of all, traditional food and beverages!<br>
-        </p>
- <!--       <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>-->
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-
-    <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>Certificate of inscription to the Tableau d’Honneur of M.O.P.A.</b> Association des Membres de l’Ordre des Palmes Académiques – Section italienne) for distinction in French language studies.
-            </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>School plaque plate as a recognition for foreign languages studies</b> (English, French, German) from Liceo Scientifico e Linguistico “L. Spallanzani” – Tivoli (RM).</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>Elected as Lazio (Italian region) representative</b> after evaluation of German language knowledge by Pädagogischer Austauschschüler Dienst (PAD); awarded with a one month stay in Kitzingen (Bavaria, from 26/06/2010 to 26/07/2010) with a host family, daily attendance of the German “Egbert Gymnasium” in Münsterschwarzach (Bavaria), as well as touring Bavarian towns and visiting Berlin.</li>
-
-        </ul>
-      </div> -->
-
-    </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+        var map = L.map('map').setView([38.9967, -76.8516], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        L.marker([38.9967, -76.8516]).addTo(map)
+            .bindPopup('NASA Goddard Space Flight Center')
+            .openPopup();
+    </script>
 </body>
-
 </html>
