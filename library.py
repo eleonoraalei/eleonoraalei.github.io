@@ -1,12 +1,15 @@
 import os
 import json
+import datetime
 
+# Fetch the current year
+this_year = datetime.datetime.now().year
 # Parameters
 name = "Alei Eleonora"
 names = name.split()
 token = "T8a9MRZlbA2SW8SPpkyAmrB4qGUSPpl7Ru73WS44"
 year1 = 2000
-year2 = 2025
+year2 = this_year
 citations = ""
 # citations = '2018JQSRT.217...86V'
 getweb = True
