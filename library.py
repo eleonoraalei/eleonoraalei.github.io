@@ -1,12 +1,15 @@
 import os
 import json
+import datetime
 
+# Fetch the current year
+this_year = datetime.datetime.now().year
 # Parameters
 name = "Alei Eleonora"
 names = name.split()
 token = "T8a9MRZlbA2SW8SPpkyAmrB4qGUSPpl7Ru73WS44"
 year1 = 2000
-year2 = 2025
+year2 = this_year
 citations = ""
 # citations = '2018JQSRT.217...86V'
 getweb = True
@@ -63,6 +66,7 @@ else:
 # Iterate across types
 html = []
 nfirst = 0
+nrfirst = 0
 htable = []
 nref = 0
 nnonref = 0
@@ -175,6 +179,8 @@ for itype in range(2):
         auth = paper["author"][0].split(",")
         if itype == 0 and auth[0] == names[0]:
             nfirst += 1
+        elif itype == 1 and auth[0] == names[0]:
+            nrfirst += 1
         htable.append(paper["citation_count"])
 
         html.append('            <div class="list-group-item">')
@@ -295,70 +301,78 @@ if wtable:
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 14,
-        "                                <th>Citations</th>",
+        "                                <th>Non-Refereed First Author</th>",
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 15,
-        "                                <th>h-index</th>",
+        "                                <th>Citations</th>",
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 16,
-        "                            </tr>",
+        "                                <th>h-index</th>",
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 17,
-        "                        </thead>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 18,
-        "                        <tbody>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 19,
-        f"                            <tr>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 20,
-        f"                                <td>{nref+nnonref}</td>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 21,
-        f"                                <td>{nref}</td>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 22,
-        f"                                <td>{nfirst}</td>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 23,
-        f"                                <td>{ncit}</td>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 24,
-        f"                                <td>{hindex}</td>",
-    )
-    html.insert(
-        html.index('    <section id="publications" class="mt-5 pt-5">') + 25,
         "                            </tr>",
     )
     html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 18,
+        "                        </thead>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 19,
+        "                        <tbody>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 20,
+        f"                            <tr>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 21,
+        f"                                <td>{nref+nnonref}</td>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 22,
+        f"                                <td>{nref}</td>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 23,
+        f"                                <td>{nfirst}</td>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 24,
+        f"                                <td>{nrfirst}</td>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 25,
+        f"                                <td>{ncit}</td>",
+    )
+    html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 26,
-        "                        </tbody>",
+        f"                                <td>{hindex}</td>",
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 27,
-        "                    </table>",
+        "                            </tr>",
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 28,
-        "                </div>",
+        "                        </tbody>",
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 29,
-        "            </div>",
+        "                    </table>",
     )
     html.insert(
         html.index('    <section id="publications" class="mt-5 pt-5">') + 30,
+        "                </div>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 31,
+        "            </div>",
+    )
+    html.insert(
+        html.index('    <section id="publications" class="mt-5 pt-5">') + 32,
         "        </div>",
     )
 
