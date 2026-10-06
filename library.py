@@ -7,7 +7,13 @@ this_year = datetime.datetime.now().year
 # Parameters
 name = "Alei Eleonora"
 names = name.split()
-token = "T8a9MRZlbA2SW8SPpkyAmrB4qGUSPpl7Ru73WS44"
+import os
+
+# Fetch the token from the environment variables
+token = os.environ.get("ADS_API_TOKEN")
+
+if not token:
+    raise ValueError("ADS_API_TOKEN environment variable not set!")
 year1 = 2000
 year2 = this_year
 citations = ""

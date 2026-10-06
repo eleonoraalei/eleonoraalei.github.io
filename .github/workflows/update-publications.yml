@@ -1,0 +1,35 @@
+name: Update Publications
+
+on:
+  schedule:
+    # Runs automatically at midnight every Sunday. 
+    # (Format: minute hour day_of_month month day_of_week)
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allows you to trigger the run manually from the GitHub UI
+
+jobs:
+  update-pubs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grants permission to push the commit
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x' # Standard Python environment
+
+      - name: Run library.py
+        env:
+          ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }} # Injects your secret
+        run: |
+          python library.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated update of publications list"
+          file_pattern: "publications.html library_ref.json library_nonref.json"
