@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Eleonora Alei</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .project-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-image {
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-section {
+            margin-bottom: 4rem;
+        }
+        .project-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .project-title {
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+       <header class="fixed-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
+            <div class="container">
+                <a class="navbar-brand main-navbar-brand" href="index.html">Eleonora Alei</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav main-navbar-nav">
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#research-highlights">Research</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="#skills-interests">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="publications.html">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav-link" href="cv.html">CV</a></li>
+                    </ul>
+                    <button id="dark-mode-toggle" class="btn btn-secondary ms-3">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>    
+
+    <main class="container mt-5">
+        <section id="research" class="mt-5 pt-5">
+            <div class="section-header">
+                <h2><i class="fas fa-microscope"></i> Research</h2>
+            </div>
+
+            <!-- Brief Research Overview -->
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <p>My research focuses on exoplanet characterization, with a particular emphasis on atmospheric modeling and the development of tools for future space missions. I use advanced techniques in atmospheric retrieval, radiative transfer modeling, and data analysis to study distant worlds and contribute to our understanding of planetary habitability.</p>
+                </div>
+            </div>
+
+            <!-- Project Sections -->
+
+            <!-- Habitable Worlds Observatory (HWO) -->
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="path_to_HWO_image.jpg" class="project-image" alt="Habitable Worlds Observatory">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="project-title">Habitable Worlds Observatory (HWO)</h3>
+                        <p>As part of the HWO project, I'm developing Multi-bandpass Photometry for Exoplanet Atmosphere Reconnaissance (MPEAR). This work focuses on optimizing observing strategies for detecting and characterizing Earth-like planets around Sun-like stars.</p>
+                        <p>Key achievements:</p>
+                        <ul>
+                            <li>Developed a new algorithm for determining optimal broadband photometric observations</li>
+                            <li>Created a noise and exposure time calculator for the HWO coronagraph instrument</li>
+                            <li>Demonstrated the capability to differentiate Earth-like planets from Neptunes using multi-bandpass observations</li>
+                        </ul>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv251205279A" class="btn btn-primary">Read Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIFE Mission -->
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-6 order-md-2">
+                        <img src="path_to_LIFE_image.jpg" class="project-image" alt="LIFE Mission">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3 class="project-title">Large Interferometer For Exoplanets (LIFE)</h3>
+                        <p>I'm actively involved in the LIFE mission, focusing on atmospheric retrievals and defining mission requirements. My work helps quantify the potential of LIFE for characterizing Earth-like exoplanets and their atmospheres.</p>
+                        <p>Research highlights:</p>
+                        <ul>
+                            <li>Performed Bayesian retrievals on simulated spectra of Earth at various evolutionary stages</li>
+                            <li>Assessed the impact of clouds on atmospheric retrievals</li>
+                            <li>Investigated the synergy between LIFE and other future space missions like HWO</li>
+                        </ul>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2022A&A...665A.106A" class="btn btn-primary">Read Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exo-MerCat -->
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="path_to_ExoMerCat_image.jpg" class="project-image" alt="Exo-MerCat">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="project-title">Exo-MerCat</h3>
+                        <p>I developed Exo-MerCat, a comprehensive merged catalog of exoplanets with Virtual Observatory connection. This tool has significantly improved the accessibility and usability of exoplanet data for researchers worldwide.</p>
+                        <p>Key features:</p>
+                        <ul>
+                            <li>Integration of multiple exoplanet databases</li>
+                            <li>VO-aware Python code for easy data retrieval</li>
+                            <li>Standardized output and notation differences handling</li>
+                            <li>Regular updates to include newly discovered exoplanets</li>
+                        </ul>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2020A&C....3100370A" class="btn btn-primary">Read Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atmospheric Retrieval Studies -->
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-6 order-md-2">
+                        <img src="path_to_retrieval_image.jpg" class="project-image" alt="Atmospheric Retrieval Studies">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3 class="project-title">Atmospheric Retrieval Studies</h3>
+                        <p>My work in atmospheric retrieval focuses on developing and refining techniques to extract maximum information from exoplanet spectra. This research is crucial for future space missions and our understanding of exoplanet atmospheres.</p>
+                        <p>Research focus:</p>
+                        <ul>
+                            <li>Investigating the impact of different opacity tables on retrieval results</li>
+                            <li>Assessing the effects of clouds on atmospheric characterization</li>
+                            <li>Studying the potential of combining data from multiple missions (e.g., LIFE and HWO)</li>
+                        </ul>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2022SPIE12180E..3LA" class="btn btn-primary">Read Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+    </main>
+
+    <footer class="text-center py-3 mt-5">
+        <p>&copy; 2025 Eleonora Alei. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

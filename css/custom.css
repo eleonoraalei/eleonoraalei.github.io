@@ -1775,3 +1775,38 @@ footer {
         flex-wrap: wrap;
     }
 }
+
+/* Stacked logos: main logo with a smaller badge overlapping its corner */
+.logo-stack {
+    position: relative;
+    width: 100%;
+    max-width: 96px;
+    height: 78px;
+}
+
+.timeline-logo .logo-stack .logo-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84px;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    padding: 3px 4px;
+    border-radius: 8px;
+}
+
+.dark-mode .timeline-logo .logo-stack .logo-main {
+    background-color: #ffffff;
+}
+
+.timeline-logo .logo-stack .logo-badge {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 44px;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+}
