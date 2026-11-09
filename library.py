@@ -129,9 +129,6 @@ html.append(
     '                    <li class="nav-item"><a class="nav-link main-nav-link" href="index.html#research-highlights">Research</a></li>'
 )
 html.append(
-    '                    <li class="nav-item"><a class="nav-link main-nav-link" href="index.html#skills-interests">Skills</a></li>'
-)
-html.append(
     '                    <li class="nav-item"><a class="nav-link main-nav-link active" href="publications.html">Publications</a></li>'
 )
 html.append(
